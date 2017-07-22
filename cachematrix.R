@@ -8,17 +8,17 @@
 makeCacheMatrix <- function(x = matrix()) {
   inverse<- NULL ## initializing the inverse to null 
   set <- function(new){
-   x <<- new
-   inverse<<- NULL
+   x <<- new   ## Setting the matrix to the new input given byt he user 
+   inverse<<- NULL  ## reinitializing the inverse to NULL
   }
   get <- function(){
-    x
+    x    ## return x
   }
   set_inverse <- function(new_inverse){
-    inverse <<- new_inverse
+    inverse <<- new_inverse  ## set inverse as the value input from users 
   }
   get_inverse <- function(){
-    inverse
+    inverse  ## return inverse matrix
   }
 
 }
