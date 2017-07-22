@@ -6,7 +6,7 @@
 ## This can set the matrix, get the matrix and it can also set or get the inverse of this matrix
 
 makeCacheMatrix <- function(x = matrix()) {
-  inverse<- NULL
+  inverse<- NULL ## initializing the inverse to null 
   set <- function(new){
    x <<- new
    inverse<<- NULL
@@ -24,7 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## The following function is responsible for computing the inverse of the mtrix
+## It first checks if the inverse of the matrix has already been computed 
+## if it has already been computed, then the program simply returns this computed value 
+## otherwise it take the matrix and computes the inverse and then returns this value
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
